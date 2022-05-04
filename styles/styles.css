@@ -5,7 +5,8 @@
 }
 
 body {
-    background: linear-gradient(45deg, #6ffad2 50%, #5390D9 50%);
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(4,13,66,1) 9%, rgba(6,40,51,1) 50%, rgba(0,212,255,1) 100%); 
     margin: auto;
     width: 90%;
     height: 100vh;
@@ -19,12 +20,23 @@ body {
 }
 
 h1 {
-    color: #e7ebf5f6;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 35px;
     padding: 1em;
+    color: #252a30;
+    animation: first_color .9s ease-in-out infinite alternate;
+}
+
+@keyframes first_color {
+    0% {
+        text-shadow: 0 0 10px #2982f0, 0 0 15px #032855, 0 0 20px #2982f0
+    }
+
+    100% {
+        text-shadow: 0 0 1px #2982f0, 0 0 5px #032855, 0 0 5px #6ffad2
+    }
 }
 
 main {
@@ -63,11 +75,16 @@ button {
     justify-content: center;
     margin: auto;
     padding: 5px 8px;
-    background-color: #a2c8f7;
+    background-color: #032855;
     font-size: 20px;
     font-weight: 400;
     border-radius: 10%;
-    color: #032855
+    color: #a2c8f7;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 5px #6ffad2;
 }
 
 footer {
@@ -75,5 +92,4 @@ footer {
     display: flex;
     justify-content: center;
     color: #032855;
-
 }
