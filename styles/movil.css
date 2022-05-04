@@ -30,7 +30,7 @@
 
     footer {
         margin: 50px -200px;
-        text-align: center;
+        justify-content: center;
     }
 
     footer p {
